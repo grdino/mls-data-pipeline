@@ -1,13 +1,17 @@
-# Ignore MLS exports
-raw/*.csv
+# Data files - do not track MLS exports or generated outputs
+dev/data/
+prod/data/raw/
+prod/data/cleaned/
 
-# Ignore cleaned output
-cleaned/*.csv
-
-# Ignore Excel files
-raw/*.xlsx
-cleaned/*.xlsx
-
-# Ignore Python cache files
+# Python
 __pycache__/
 *.pyc
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Analysis outputs
+dev/scripts/analysis/*.csv
